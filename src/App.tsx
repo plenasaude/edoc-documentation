@@ -25,6 +25,14 @@ import API from "./pages/Projects/API";
 
 import Architecture from "./pages/Architecture";
 
+import MongoCollections from "./pages/MongoCollections";
+
+import ComplexFlows from "./pages/ComplexFlows";
+import Procedures from "./pages/ComplexFlows/Procedures";
+import Slots from "./pages/ComplexFlows/Slots";
+import Billing from "./pages/ComplexFlows/Billing";
+import Queues from "./pages/ComplexFlows/Queues";
+
 function App() {
   return (
     <div>
@@ -53,8 +61,20 @@ function App() {
             <Route path="deploy" element={<Deploy />} />
           </Route>
 
+          <Route path="/complex-flows" element={<TOC />}>
+            <Route index element={<ComplexFlows />} />
+            <Route path="procedures" element={<Procedures />} />
+            <Route path="slots" element={<Slots />} />
+            <Route path="billing" element={<Billing />} />
+            <Route path="queues" element={<Queues />} />
+          </Route>
+
           <Route path="/architecture" element={<TOC />}>
             <Route index element={<Architecture />} />
+          </Route>
+
+          <Route path="/mongo-collections" element={<TOC />}>
+            <Route index element={<MongoCollections />} />
           </Route>
 
           <Route path="/projects" element={<TOC />}>
@@ -98,7 +118,15 @@ function TOC() {
         </TOCLink>
         <TOCLink to="/getting-started/deploy">Deployando</TOCLink>
 
+        <TOCTitle to="/complex-flows">Fluxos complexos</TOCTitle>
+        <TOCLink to="/complex-flows/procedures">Procedimentos</TOCLink>
+        <TOCLink to="/complex-flows/slots">Slots</TOCLink>
+        <TOCLink to="/complex-flows/billing">Faturamento</TOCLink>
+        <TOCLink to="/complex-flows/queues">Filas de espera</TOCLink>
+
         <TOCTitle to="/architecture">Arquitetura</TOCTitle>
+
+        <TOCTitle to="/mongo-collections">Base de dados</TOCTitle>
 
         <TOCTitle to="/projects">Projetos</TOCTitle>
         <TOCLink to="/projects/api">API</TOCLink>
