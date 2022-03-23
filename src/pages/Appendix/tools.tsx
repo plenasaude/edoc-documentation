@@ -6,7 +6,14 @@ export default function Tools() {
       <h1>Ferramentas</h1>
 
       <ul>
+        <li>Node.js</li>
+        <li>Angulas</li>
         <li>Docker</li>
+        <li>Redis</li>
+        <li>ElasticSearch</li>
+        <li>Electron</li>
+        <li>GitHub</li>
+        <li>Auth0</li>
       </ul>
     </PageContent>
   );

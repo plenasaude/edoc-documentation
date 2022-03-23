@@ -20,8 +20,14 @@
 		"body": [
 			"import { PageContent } from \"../../components/PageContent\";",
 			"",
-			"export default function $TM_FILENAME_BASE() {",
-      "  return <PageContent>$TM_FILENAME_BASE</PageContent>;",
+			"export default function ${1:$TM_FILENAME_BASE}() {",
+      "  return (",
+      "    <PageContent>",
+      "      <h1>${2:$TM_FILENAME_BASE}</h1>",
+      "",
+      "      <p>${3:Texto}</p>",
+      "    </PageContent>",
+      "  );",
 			"}"
 		],
 		"description": "Create empty page"

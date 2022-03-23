@@ -21,7 +21,8 @@ function CustomLink({ children, to, ...props }: LinkProps) {
 }
 
 export const TOCTitle = styled(CustomLink)`
-  margin-bottom: 0.7rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.3rem;
   font-family: "Founders Grotesk", ui-sans-serif, system-ui, -apple-system,
     BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -39,7 +40,7 @@ export const TOCTitle = styled(CustomLink)`
 export const TOCLink = styled(CustomLink)`
   font-size: 14px;
   padding: 0.25rem;
-  margin-left: 0.5rem;
+  margin-left: 1.5rem;
   margin-bottom: 0.5rem;
   transform: translateX(-0.25rem);
   border-radius: 4px;

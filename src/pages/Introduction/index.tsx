@@ -6,6 +6,7 @@ export default function Home() {
   return (
     <PageContent>
       <h1>Introdução</h1>
+
       <p>
         Essa documentação tem como objetivo capacitar um desenvolvedor a mexer
         na plataforma eDoc.
@@ -39,6 +40,15 @@ export default function Home() {
         anos e por mais que tenhamos nos esforçado não conseguimos colocar todas
         as nossas ideias em prática (imagino que você também não conseguirá)!
         Mas deixaremos essa documentação cheia de dicas de melhorias.
+      </p>
+
+      <p>
+        A seção de introdução dessa documentação visa transmitir o conceito do
+        que é a eDoc, qual o objetivo do produto, o que é esse produto (sob a
+        ótica do usuários e não de tecnologia) e quais as principais tecnologias
+        que alguém precisa saber antes de começar a olhar para o código. Você
+        deveria sair desta seção com uma compreensão macro sobre o produto que
+        está prestes a se envolver.
       </p>
     </PageContent>
   );
