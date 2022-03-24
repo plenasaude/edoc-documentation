@@ -34,6 +34,9 @@ import Slots from "./pages/ComplexFlows/Slots";
 import Billing from "./pages/ComplexFlows/Billing";
 import Queues from "./pages/ComplexFlows/Queues";
 
+import ManualProcesses from "./pages/ManualProcesses";
+import HardcodedFlows from "./pages/ManualProcesses/HardcodedFlows";
+
 function App() {
   return (
     <BrowserRouter>
@@ -80,6 +83,11 @@ function App() {
         <Route path="/projects" element={<TOC />}>
           <Route index element={<Projects />} />
           <Route path="api" element={<API />} />
+        </Route>
+
+        <Route path="/manual-processes" element={<TOC />}>
+          <Route index element={<ManualProcesses />} />
+          <Route path="hardcoded-flows" element={<HardcodedFlows />} />
         </Route>
 
         <Route path="/appendix" element={<TOC />}>
@@ -133,6 +141,11 @@ function TOC() {
 
         <TOCTitle to="/projects">Projetos</TOCTitle>
         <TOCLink to="/projects/api">API</TOCLink>
+
+        <TOCTitle to="/manual-processes">Processos manuais</TOCTitle>
+        <TOCLink to="/manual-processes/hardcoded-flows">
+          Fluxos hardcodados
+        </TOCLink>
 
         <TOCTitle to="/appendix">Apêndices</TOCTitle>
         <TOCLink to="/appendix/tools">Ferramentas</TOCLink>
