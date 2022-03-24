@@ -14,6 +14,7 @@ export default function Tools() {
         <li>Electron</li>
         <li>GitHub</li>
         <li>Auth0</li>
+        <li>eb CLI</li>
       </ul>
     </PageContent>
   );

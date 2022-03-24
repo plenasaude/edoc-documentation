@@ -1,4 +1,5 @@
 import { PageContent } from "../../components/PageContent";
+import { TODO } from "../../components/TODO";
 
 export default function Requirements() {
   return (
@@ -45,7 +46,7 @@ export default function Requirements() {
         para os projetos já existentes.
       </p>
 
-      <h2>Docker</h2>
+      <h2>Docker e docker-compose</h2>
 
       <p>
         O uso de Docker e docker composer é essencial para rodar a eDoc de forma
@@ -62,6 +63,15 @@ export default function Requirements() {
         </a>
         do VSCode.
       </p>
+
+      <h2>Usuário no GitHub</h2>
+      <TODO />
+
+      <h2>Usuário no auth0</h2>
+      <TODO></TODO>
+
+      <h2>eb CLI</h2>
+      <TODO></TODO>
     </PageContent>
   );
 }

@@ -1,7 +1,7 @@
 import { PageContent } from "../../components/PageContent";
 import { DownloadFile } from "../../components/DownloadFile";
 
-import apiDotEnv from "./dotFiles/api?url";
+import apiDotEnv from "../../dotFiles/apiLocal?url";
 
 export default function API() {
   return (

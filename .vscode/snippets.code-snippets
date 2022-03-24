@@ -25,11 +25,52 @@
       "    <PageContent>",
       "      <h1>${2:$TM_FILENAME_BASE}</h1>",
       "",
-      "      <p>${3:Texto}</p>",
+      "      <p>",
+      "        ${3:Texto}",
+      "      </p>",
       "    </PageContent>",
       "  );",
 			"}"
 		],
 		"description": "Create empty page"
-	}
+	},
+	"Paragraph": {
+		"prefix": "p",
+		"body": [
+      "<p>",
+      "  ${1}",
+      "</p>",
+		],
+		"description": "Create empty HTML paragraph"
+	},
+	"Header1": {
+		"prefix": "h1",
+		"body": ["<h1>${1}</h1>"],
+		"description": "Create an empty HTML h1"
+	},
+	"Header2": {
+		"prefix": "h2",
+		"body": ["<h2>${1}</h2>"],
+		"description": "Create an empty HTML h2"
+	},
+	"Header3": {
+		"prefix": "h3",
+		"body": ["<h3>${1}</h3>"],
+		"description": "Create an empty HTML h3"
+	},
+	"List element": {
+		"prefix": "li",
+		"body": ["<li>${1}</li>"],
+		"description": "Create an empty HTML list element"
+	},
+	"Code element": {
+		"prefix": "code",
+		"body": ["<code>${1}</code>"],
+		"description": "Create an empty HTML code element"
+	},
+	"TODO element": {
+		"prefix": "todo",
+		"body": ["<TODO>${1}</TODO>"],
+		"description": "Create a TODO tag"
+	},
 }

@@ -7,6 +7,7 @@ import Home from "./pages/Introduction";
 import Product from "./pages/Introduction/Product";
 import MainTechnologies from "./pages/Introduction/MainTechnologies";
 import Cloud from "./pages/Introduction/Cloud";
+import Git from "./pages/Introduction/Git";
 
 import Appendix from "./pages/Appendix";
 import Tools from "./pages/Appendix/tools";
@@ -46,6 +47,7 @@ function App() {
           <Route path="product" element={<Product />} />
           <Route path="technologies" element={<MainTechnologies />} />
           <Route path="cloud" element={<Cloud />} />
+          <Route path="git" element={<Git />} />
         </Route>
 
         <Route path="/getting-started" element={<TOC />}>
@@ -112,6 +114,7 @@ function TOC() {
         <TOCLink to="/product">Produto</TOCLink>
         <TOCLink to="/technologies">Principais tecnologias</TOCLink>
         <TOCLink to="/cloud">Hospedagem</TOCLink>
+        <TOCLink to="/git">Git</TOCLink>
 
         <TOCTitle to="/getting-started">Começando</TOCTitle>
         <TOCLink to="/getting-started/requirements">Requisitos</TOCLink>
