@@ -36,65 +36,63 @@ import Queues from "./pages/ComplexFlows/Queues";
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<TOC />}>
-            <Route index element={<Home />} />
-            <Route path="product" element={<Product />} />
-            <Route path="technologies" element={<MainTechnologies />} />
-            <Route path="cloud" element={<Cloud />} />
-          </Route>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<TOC />}>
+          <Route index element={<Home />} />
+          <Route path="product" element={<Product />} />
+          <Route path="technologies" element={<MainTechnologies />} />
+          <Route path="cloud" element={<Cloud />} />
+        </Route>
 
-          <Route path="/getting-started" element={<TOC />}>
-            <Route index element={<GettingStarted />} />
-            <Route path="requirements" element={<Requirements />} />
-            <Route
-              path="environment-variables"
-              element={<EnvironmentVariables />}
-            />
-            <Route
-              path="projects-dependencies"
-              element={<ProjectsDependencies />}
-            />
-            <Route path="running-locally" element={<RunningLocally />} />
-            <Route path="running-mixed" element={<RunningMixed />} />
-            <Route path="deploy" element={<Deploy />} />
-          </Route>
+        <Route path="/getting-started" element={<TOC />}>
+          <Route index element={<GettingStarted />} />
+          <Route path="requirements" element={<Requirements />} />
+          <Route
+            path="environment-variables"
+            element={<EnvironmentVariables />}
+          />
+          <Route
+            path="projects-dependencies"
+            element={<ProjectsDependencies />}
+          />
+          <Route path="running-locally" element={<RunningLocally />} />
+          <Route path="running-mixed" element={<RunningMixed />} />
+          <Route path="deploy" element={<Deploy />} />
+        </Route>
 
-          <Route path="/complex-flows" element={<TOC />}>
-            <Route index element={<ComplexFlows />} />
-            <Route path="procedures" element={<Procedures />} />
-            <Route path="slots" element={<Slots />} />
-            <Route path="billing" element={<Billing />} />
-            <Route path="queues" element={<Queues />} />
-          </Route>
+        <Route path="/complex-flows" element={<TOC />}>
+          <Route index element={<ComplexFlows />} />
+          <Route path="procedures" element={<Procedures />} />
+          <Route path="slots" element={<Slots />} />
+          <Route path="billing" element={<Billing />} />
+          <Route path="queues" element={<Queues />} />
+        </Route>
 
-          <Route path="/architecture" element={<TOC />}>
-            <Route index element={<Architecture />} />
-          </Route>
+        <Route path="/architecture" element={<TOC />}>
+          <Route index element={<Architecture />} />
+        </Route>
 
-          <Route path="/mongo-collections" element={<TOC />}>
-            <Route index element={<MongoCollections />} />
-          </Route>
+        <Route path="/mongo-collections" element={<TOC />}>
+          <Route index element={<MongoCollections />} />
+        </Route>
 
-          <Route path="/projects" element={<TOC />}>
-            <Route index element={<Projects />} />
-            <Route path="api" element={<API />} />
-          </Route>
+        <Route path="/projects" element={<TOC />}>
+          <Route index element={<Projects />} />
+          <Route path="api" element={<API />} />
+        </Route>
 
-          <Route path="/appendix" element={<TOC />}>
-            <Route index element={<Appendix />} />
-            <Route path="tools" element={<Tools />} />
-            <Route path="qa-tests" element={<Tests />} />
-            <Route
-              path="documentation-exemples"
-              element={<DocumentationExemples />}
-            />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
+        <Route path="/appendix" element={<TOC />}>
+          <Route index element={<Appendix />} />
+          <Route path="tools" element={<Tools />} />
+          <Route path="qa-tests" element={<Tests />} />
+          <Route
+            path="documentation-exemples"
+            element={<DocumentationExemples />}
+          />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
