@@ -1,4 +1,6 @@
 import { PageContent } from "../../components/PageContent";
+import { Videos } from "../../components/Videos";
+import { TODO } from "../../components/TODO";
 
 export default function Product() {
   return (
@@ -49,41 +51,28 @@ export default function Product() {
       <h2>Solução eDoc</h2>
 
       <h3>Plataforma de grupos</h3>
-
-      <video style={{ width: "100%" }} controls>
-        <source src="/src/videos/video1.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <TODO />
+      <Videos src="exemple.mp4" />
 
       <h3>Plataforma de unidades</h3>
-
-      <video style={{ width: "100%" }} controls>
-        <source src="/src/videos/video1.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <TODO />
+      <Videos src="exemple.mp4" />
 
       <h3>Agendamento online</h3>
-
-      <video style={{ width: "100%" }} controls>
-        <source src="/src/videos/video1.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <TODO />
+      <Videos src="exemple.mp4" />
 
       <h3>Validação de certificados</h3>
-
-      <video style={{ width: "100%" }} controls>
-        <source src="/src/videos/video1.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <TODO />
+      <Videos src="exemple.mp4" />
 
       <h3>Plataforma de filas</h3>
+      <TODO />
+      <Videos src="exemple.mp4" />
 
       <h3>App</h3>
-
-      <video style={{ width: "100%" }} controls>
-        <source src="/src/videos/video1.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <TODO />
+      <Videos src="exemple.mp4" />
     </PageContent>
   );
 }

@@ -11,6 +11,7 @@ import Cloud from "./pages/Introduction/Cloud";
 import Appendix from "./pages/Appendix";
 import Tools from "./pages/Appendix/tools";
 import Tests from "./pages/Appendix/Tests";
+import DocumentationExemples from "./pages/Appendix/DocumentationExemples";
 
 import GettingStarted from "./pages/GettingStarted";
 import Requirements from "./pages/GettingStarted/Requirements";
@@ -86,6 +87,10 @@ function App() {
             <Route index element={<Appendix />} />
             <Route path="tools" element={<Tools />} />
             <Route path="qa-tests" element={<Tests />} />
+            <Route
+              path="documentation-exemples"
+              element={<DocumentationExemples />}
+            />
           </Route>
         </Routes>
       </BrowserRouter>
@@ -134,6 +139,9 @@ function TOC() {
         <TOCTitle to="/appendix">Apêndices</TOCTitle>
         <TOCLink to="/appendix/tools">Ferramentas</TOCLink>
         <TOCLink to="/appendix/qa-tests">Testes de QA</TOCLink>
+        <TOCLink to="/appendix/documentation-exemples">
+          Exemplos de uso desta documentação
+        </TOCLink>
       </LateralMenu>
     </Page>
   );
