@@ -34,6 +34,43 @@
 		],
 		"description": "Create empty page"
 	},
+	"NewProjectPage": {
+		"prefix": "project",
+		"body": [
+			"import { PageContent } from \"../../components/PageContent\";",
+			"import { DownloadFile } from \"../../components/DownloadFile\";",
+			"",
+			"import dotEnvFile from \"../../dotFiles/$1?url\";",
+			"",
+			"export default function ${2:$TM_FILENAME_BASE}() {",
+      "  return (",
+      "    <PageContent>",
+      "      <h1>${3:$TM_FILENAME_BASE}</h1>",
+      "",
+      "      <a href=\"$4\">Github</a>",
+      "",
+      "      <h2>Deploy</h2>",
+      "      <p>",
+      "        Deployado usando eb deploy.",
+      "      </p>",
+      "",
+      "      <h2>.env</h2>",
+      "      <p>",
+      "        Baixe o arquivo dentro do diretório do projeto e renomeio como .env",
+      "      </p>",
+      "      <DownloadFile src={dotEnvFile}>.env</DownloadFile>",
+      "",
+      "      <h2>Variáveis de ambiente</h2>",
+      "",
+      "      <p>",
+      "        ${5:Texto}",
+      "      </p>",
+      "    </PageContent>",
+      "  );",
+			"}"
+		],
+		"description": "Create a project page"
+	},
 	"Paragraph": {
 		"prefix": "p",
 		"body": [

@@ -1,6 +1,26 @@
 graph TD
-    A[Christmas] -->|Get money| B(Go shopping)
-    B --> C{Let me think}
-    C -->|One| D[Laptop]
-    C -->|Two| E[iPhone]
-    C -->|Three| F[fa:fa-car Car]
+    API --> MONGO
+    API --> Auth
+    API --> LinesServer
+    LinesServer --> MONGO
+    Filas --> LinesServer
+    CertificateValidator --> MONGO
+    subgraph AWS
+        subgraph ElasticBeanstalk
+            API
+            LinesServer
+            CertificateValidator
+        end
+    end
+    
+    subgraph MongoAtlas
+     MONGO[(MONGODB)]
+    end
+
+    subgraph Auth0
+     Auth[(Logins)]
+    end
+
+    subgraph Totens
+     Filas
+    end

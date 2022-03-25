@@ -24,10 +24,15 @@ import ProjectsDependencies from "./pages/GettingStarted/ProjectsDependencies";
 
 import Projects from "./pages/Projects";
 import API from "./pages/Projects/API";
+import CertificateValidator from "./pages/Projects/CertificateValidator";
+import Edocker from "./pages/Projects/Edocker";
+import LinesServer from "./pages/Projects/LinesServer";
+import LinesClient from "./pages/Projects/LinesClient";
 
 import Architecture from "./pages/Architecture";
 
 import MongoCollections from "./pages/MongoCollections";
+import SessionRecordRegisters from "./pages/MongoCollections/SessionRecordRegisters";
 
 import ComplexFlows from "./pages/ComplexFlows";
 import Procedures from "./pages/ComplexFlows/Procedures";
@@ -80,11 +85,22 @@ function App() {
 
         <Route path="/mongo-collections" element={<TOC />}>
           <Route index element={<MongoCollections />} />
+          <Route
+            path="session-record-registers"
+            element={<SessionRecordRegisters />}
+          />
         </Route>
 
         <Route path="/projects" element={<TOC />}>
           <Route index element={<Projects />} />
           <Route path="api" element={<API />} />
+          <Route
+            path="certificate-validator"
+            element={<CertificateValidator />}
+          />
+          <Route path="edocker" element={<Edocker />} />
+          <Route path="lines-server" element={<LinesServer />} />
+          <Route path="lines-client" element={<LinesClient />} />
         </Route>
 
         <Route path="/manual-processes" element={<TOC />}>
@@ -141,9 +157,18 @@ function TOC() {
         <TOCTitle to="/architecture">Arquitetura</TOCTitle>
 
         <TOCTitle to="/mongo-collections">Base de dados</TOCTitle>
+        <TOCLink to="/mongo-collections/session-record-registers">
+          sessionrecordregisters
+        </TOCLink>
 
         <TOCTitle to="/projects">Projetos</TOCTitle>
+        <TOCLink to="/projects/edocker">edocker</TOCLink>
         <TOCLink to="/projects/api">API</TOCLink>
+        <TOCLink to="/projects/certificate-validator">
+          Validador de atestados
+        </TOCLink>
+        <TOCLink to="/projects/lines-server">Servidor de filas</TOCLink>
+        <TOCLink to="/projects/lines-client">Cliente de filas</TOCLink>
 
         <TOCTitle to="/manual-processes">Processos manuais</TOCTitle>
         <TOCLink to="/manual-processes/hardcoded-flows">

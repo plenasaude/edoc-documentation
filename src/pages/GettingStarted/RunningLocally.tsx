@@ -3,6 +3,8 @@ import { DownloadFile } from "../../components/DownloadFile";
 import { TODO } from "../../components/TODO";
 
 import api from "../../dotFiles/apiLocal?url";
+import linesServer from "../../dotFiles/linesServer?url";
+import certificateValidator from "../../dotFiles/certificateValidatorEnv?url";
 import edockerBase from "../../dotFiles/edockerBase?url";
 import mongoBackup from "../../files/dbRestorePlaceholder?url";
 
@@ -141,10 +143,57 @@ export default function RunningLocally() {
       </p>
 
       <h1>Rodando o sistema de filas</h1>
-      <TODO></TODO>
+
+      <p>
+        Para rodar o servidor de filas também é bastante simples, com o mongo já
+        de pé, siga os seguintes paços:
+      </p>
+
+      <ol>
+        <li>
+          Clone o projeto{" "}
+          <a href="https://github.com/plenasaude/lines_server">lines_server</a>.
+        </li>
+        <li>npm install</li>
+        <li>
+          Adicione <DownloadFile src={linesServer}>este arquivo</DownloadFile>{" "}
+          como .env no diretório raiz do projeto.
+        </li>
+        <li>npm start</li>
+      </ol>
+
+      <p>Depois de rodar o servidor podemos iniciar o cliente de filas:</p>
+
+      <ol>
+        <li>
+          Clone o projeto{" "}
+          <a href="https://github.com/plenasaude/lines_client">lines_client</a>.
+        </li>
+        <li>npm install</li>
+        <li>npm start</li>
+      </ol>
+
+      <TODO>
+        Como criar uma tela e autorização para fazer o login na tela inicial
+      </TODO>
 
       <h1>Rodando validador de certificados</h1>
-      <TODO></TODO>
+      <ol>
+        <li>
+          Clone o projeto{" "}
+          <a href="https://github.com/plenasaude/certificate_validator">
+            certificate_validator
+          </a>
+          .
+        </li>
+        <li>npm install</li>
+        <li>
+          Adicione{" "}
+          <DownloadFile src={certificateValidator}>este arquivo</DownloadFile>{" "}
+          como .env no diretório raiz do projeto.
+        </li>
+        <li>npm run dev</li>
+      </ol>
     </PageContent>
   );
 }

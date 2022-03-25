@@ -1,0 +1,6 @@
+graph TD
+  LinesServer --> MONGO[(MONGO)]
+  LinesClient --> LinesServer
+  API --> MONGO[(MONGO)]
+  API --> LinesServer
+  CertificateValidator --> MONGO[(MONGO)]

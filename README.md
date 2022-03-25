@@ -2,7 +2,7 @@
 
 ## Rodando
 
-Essa documentação foi feita para ser rodada e consumida no local via
+Essa documentação foi feita para ser rodada e consumida localmente via
 `npm run dev`.
 
 No entando esse projeto foi feito como uma SPA e pode ser deployada como tal

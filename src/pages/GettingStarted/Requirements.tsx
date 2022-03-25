@@ -64,13 +64,31 @@ export default function Requirements() {
         do VSCode.
       </p>
 
-      <h2>Usuário no GitHub</h2>
-      <TODO />
+      <h2>aws/eb CLI</h2>
+
+      <p>
+        O principal host da eDoc é a AWS, essa provedora fornece algumas
+        ferramentas para possibilitar o trabalho com seus artefatos a partir da
+        sua linha de comando. Além de uso para pequenas tarefas você precisará
+        das ferramentas de linha de comando para o deploy das aplicações.
+      </p>
+
+      <p>
+        A ferramenta mais utilizada será a{" "}
+        <a href="https://docs.aws.amazon.com/pt_br/elasticbeanstalk/latest/dg/eb-cli3-install.html">
+          eb CLI
+        </a>{" "}
+        uma vez que a maior parte dos nossos projetos são deployados no
+        ElasticBeanstalk.
+      </p>
+
+      <p>
+        Outra ferramenta importante para a gestão da nuvem da AWS a partir do
+        local é a <a href="https://aws.amazon.com/pt/cli/">aws CLI</a>, essa
+        sendo mais genérica que a primeira.
+      </p>
 
       <h2>Usuário no auth0</h2>
-      <TODO></TODO>
-
-      <h2>eb CLI</h2>
       <TODO></TODO>
     </PageContent>
   );
