@@ -33,6 +33,9 @@ import Architecture from "./pages/Architecture";
 
 import MongoCollections from "./pages/MongoCollections";
 import SessionRecordRegisters from "./pages/MongoCollections/SessionRecordRegisters";
+import Appointments from "./pages/MongoCollections/Appointments";
+import Availabilities from "./pages/MongoCollections/Availabilities";
+import Cids from "./pages/MongoCollections/Cids";
 
 import ComplexFlows from "./pages/ComplexFlows";
 import Procedures from "./pages/ComplexFlows/Procedures";
@@ -88,6 +91,18 @@ function App() {
           <Route
             path="session-record-registers"
             element={<SessionRecordRegisters />}
+          />
+          <Route
+            path="appointments"
+            element={<Appointments />}
+          />
+          <Route
+            path="availabilities"
+            element={<Availabilities />}
+          />
+          <Route
+            path="cids"
+            element={<Cids />}
           />
         </Route>
 
@@ -159,6 +174,15 @@ function TOC() {
         <TOCTitle to="/mongo-collections">Base de dados</TOCTitle>
         <TOCLink to="/mongo-collections/session-record-registers">
           sessionrecordregisters
+        </TOCLink>
+        <TOCLink to="/mongo-collections/appointments">
+          appointments
+        </TOCLink>
+        <TOCLink to="/mongo-collections/availabilities">
+          availabilites
+        </TOCLink>
+        <TOCLink to="/mongo-collections/cids">
+          cids
         </TOCLink>
 
         <TOCTitle to="/projects">Projetos</TOCTitle>
