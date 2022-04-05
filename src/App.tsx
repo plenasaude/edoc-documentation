@@ -36,6 +36,8 @@ import SessionRecordRegisters from "./pages/MongoCollections/SessionRecordRegist
 import Appointments from "./pages/MongoCollections/Appointments";
 import Availabilities from "./pages/MongoCollections/Availabilities";
 import Cids from "./pages/MongoCollections/Cids";
+import Contracts from "./pages/MongoCollections/Contracts";
+import ContractLines from "./pages/MongoCollections/ContractLines";
 
 import ComplexFlows from "./pages/ComplexFlows";
 import Procedures from "./pages/ComplexFlows/Procedures";
@@ -103,6 +105,14 @@ function App() {
           <Route
             path="cids"
             element={<Cids />}
+          />
+          <Route
+            path="contracts"
+            element={<Contracts />}
+          />
+          <Route
+            path="contractlines"
+            element={<ContractLines />}
           />
         </Route>
 
@@ -183,6 +193,12 @@ function TOC() {
         </TOCLink>
         <TOCLink to="/mongo-collections/cids">
           cids
+        </TOCLink>
+        <TOCLink to="/mongo-collections/contracts">
+          contracts
+        </TOCLink>
+        <TOCLink to="/mongo-collections/contractlines">
+          contractlines
         </TOCLink>
 
         <TOCTitle to="/projects">Projetos</TOCTitle>
