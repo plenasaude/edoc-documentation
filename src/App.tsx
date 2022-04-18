@@ -38,6 +38,8 @@ import Availabilities from "./pages/MongoCollections/Availabilities";
 import Cids from "./pages/MongoCollections/Cids";
 import Contracts from "./pages/MongoCollections/Contracts";
 import ContractLines from "./pages/MongoCollections/ContractLines";
+import Holidays from "./pages/MongoCollections/Holidays";
+import Lines from "./pages/MongoCollections/Lines";
 
 import ComplexFlows from "./pages/ComplexFlows";
 import Procedures from "./pages/ComplexFlows/Procedures";
@@ -113,6 +115,14 @@ function App() {
           <Route
             path="contractlines"
             element={<ContractLines />}
+          />
+          <Route
+            path="holidays"
+            element={<Holidays />}
+          />
+          <Route
+            path="lines"
+            element={<Lines />}
           />
         </Route>
 
@@ -199,6 +209,12 @@ function TOC() {
         </TOCLink>
         <TOCLink to="/mongo-collections/contractlines">
           contractlines
+        </TOCLink>
+        <TOCLink to="/mongo-collections/holidays">
+          holidays
+        </TOCLink>
+        <TOCLink to="/mongo-collections/lines">
+          lines
         </TOCLink>
 
         <TOCTitle to="/projects">Projetos</TOCTitle>
