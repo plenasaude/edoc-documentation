@@ -5,21 +5,16 @@ export default function Appointments() {
     <PageContent>
       <h1>appointments</h1>
 
+      <p>Coleção com os agendamentos feitos na eDoc.</p>
       <p>
-        Coleção com os agendamentos feitos na eDoc.
-      </p>
-      <p>
-        O agendamento é a unidade base da eDoc. Se pensarmos como uma fábrica de carros, o agendamento é o carro que vai sendo montado pelas etapas do processo. 
-        Ele é criado no call center, agendamento web ou recepção, depois disso passa por confirmação, recepção, triagem, consulta e faturamento. Os dados de cada uma dessas etapas são gravados no agendamento.
+        O agendamento é a unidade base da eDoc. Se pensarmos como uma fábrica de
+        carros, o agendamento é o carro que vai sendo montado pelas etapas do
+        processo. Ele é criado no call center, agendamento web ou recepção,
+        depois disso passa por confirmação, recepção, triagem, consulta e
+        faturamento. Os dados de cada uma dessas etapas são gravados no
+        agendamento.
       </p>
       <>
-        <style
-          type="text/css"
-          dangerouslySetInnerHTML={{
-            __html:
-              "\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-aaoz{background-color:#efefef;font-weight:bold;position:-webkit-sticky;position:sticky;text-align:left;top:-1px;\n  vertical-align:top;will-change:transform}\n.tg .tg-0lax{text-align:left;vertical-align:top}\n@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}"
-          }}
-        />
         <div className="tg-wrap">
           <table className="tg">
             <thead>
@@ -77,17 +72,23 @@ export default function Appointments() {
               </tr>
               <tr>
                 <td className="tg-0lax">createdAt</td>
-                <td className="tg-0lax">Data e hora da criação do agendamento em Unix Timestamp</td>
+                <td className="tg-0lax">
+                  Data e hora da criação do agendamento em Unix Timestamp
+                </td>
                 <td className="tg-0lax" />
               </tr>
               <tr>
                 <td className="tg-0lax">startTime</td>
-                <td className="tg-0lax">Data e hora de início em Unix Timestamp</td>
+                <td className="tg-0lax">
+                  Data e hora de início em Unix Timestamp
+                </td>
                 <td className="tg-0lax" />
               </tr>
               <tr>
                 <td className="tg-0lax">endTime</td>
-                <td className="tg-0lax">Data e hora de fim em Unix Timestamp</td>
+                <td className="tg-0lax">
+                  Data e hora de fim em Unix Timestamp
+                </td>
                 <td className="tg-0lax" />
               </tr>
               <tr>
@@ -183,7 +184,6 @@ export default function Appointments() {
           </table>
         </div>
       </>
-
     </PageContent>
   );
 }
