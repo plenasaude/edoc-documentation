@@ -5,7 +5,7 @@
 Essa documentação foi feita para ser rodada e consumida localmente via
 `npm run dev`.
 
-No entando esse projeto foi feito como uma SPA e pode ser deployada como tal
+No entanto esse projeto foi feito como uma SPA e pode ser deployado como tal
 em plataformas como a AWS S3.
 
 A documentação é escrita em [React](https://reactjs.org/) com

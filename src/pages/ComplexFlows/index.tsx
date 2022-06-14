@@ -3,7 +3,7 @@ import { PageContent } from "../../components/PageContent";
 export default function ComplexFlows() {
   return (
     <PageContent>
-      <h1>Fluxos ComplexFlows</h1>
+      <h1>Fluxos Complexos</h1>
 
       <p>
         Essa seção é dedicada à descrição dos fluxos mais complexos da eDoc. Não

@@ -30,6 +30,7 @@ import LinesServer from "./pages/Projects/LinesServer";
 import LinesClient from "./pages/Projects/LinesClient";
 
 import Architecture from "./pages/Architecture";
+import Migrations from "./pages/Architecture/Migrations";
 
 import MongoCollections from "./pages/MongoCollections";
 import SessionRecordRegisters from "./pages/MongoCollections/SessionRecordRegisters";
@@ -94,6 +95,7 @@ function App() {
 
         <Route path="/architecture" element={<TOC />}>
           <Route index element={<Architecture />} />
+          <Route path="migrations" element={<Migrations />} />
         </Route>
 
         <Route path="/mongo-collections" element={<TOC />}>
@@ -102,58 +104,19 @@ function App() {
             path="session-record-registers"
             element={<SessionRecordRegisters />}
           />
-          <Route
-            path="appointments"
-            element={<Appointments />}
-          />
-          <Route
-            path="availabilities"
-            element={<Availabilities />}
-          />
-          <Route
-            path="cids"
-            element={<Cids />}
-          />
-          <Route
-            path="contracts"
-            element={<Contracts />}
-          />
-          <Route
-            path="contractlines"
-            element={<ContractLines />}
-          />
-          <Route
-            path="holidays"
-            element={<Holidays />}
-          />
-          <Route
-            path="lines"
-            element={<Lines />}
-          />
-          <Route
-            path="ongoingsessions"
-            element={<OngoingSessions />}
-          />
-          <Route
-            path="operators"
-            element={<Operators />}
-          />
-          <Route
-            path="organizationgroups"
-            element={<Organizationgroups />}
-          />
-          <Route
-            path="organizations"
-            element={<Organizations />}
-          />
-          <Route
-            path="procedures"
-            element={<ProceduresCollection />}
-          />
-          <Route
-            path="rooms"
-            element={<Rooms />}
-          />
+          <Route path="appointments" element={<Appointments />} />
+          <Route path="availabilities" element={<Availabilities />} />
+          <Route path="cids" element={<Cids />} />
+          <Route path="contracts" element={<Contracts />} />
+          <Route path="contractlines" element={<ContractLines />} />
+          <Route path="holidays" element={<Holidays />} />
+          <Route path="lines" element={<Lines />} />
+          <Route path="ongoingsessions" element={<OngoingSessions />} />
+          <Route path="operators" element={<Operators />} />
+          <Route path="organizationgroups" element={<Organizationgroups />} />
+          <Route path="organizations" element={<Organizations />} />
+          <Route path="procedures" element={<ProceduresCollection />} />
+          <Route path="rooms" element={<Rooms />} />
         </Route>
 
         <Route path="/projects" element={<TOC />}>
@@ -220,50 +183,29 @@ function TOC() {
         <TOCLink to="/complex-flows/queues">Filas de espera</TOCLink>
 
         <TOCTitle to="/architecture">Arquitetura</TOCTitle>
+        <TOCLink to="/architecture/migrations">Migração eDoc</TOCLink>
 
         <TOCTitle to="/mongo-collections">Base de dados</TOCTitle>
         <TOCLink to="/mongo-collections/session-record-registers">
           sessionrecordregisters
         </TOCLink>
-        <TOCLink to="/mongo-collections/appointments">
-          appointments
-        </TOCLink>
-        <TOCLink to="/mongo-collections/availabilities">
-          availabilites
-        </TOCLink>
-        <TOCLink to="/mongo-collections/cids">
-          cids
-        </TOCLink>
-        <TOCLink to="/mongo-collections/contracts">
-          contracts
-        </TOCLink>
-        <TOCLink to="/mongo-collections/contractlines">
-          contractlines
-        </TOCLink>
-        <TOCLink to="/mongo-collections/holidays">
-          holidays
-        </TOCLink>
-        <TOCLink to="/mongo-collections/lines">
-          lines
-        </TOCLink>
+        <TOCLink to="/mongo-collections/appointments">appointments</TOCLink>
+        <TOCLink to="/mongo-collections/availabilities">availabilites</TOCLink>
+        <TOCLink to="/mongo-collections/cids">cids</TOCLink>
+        <TOCLink to="/mongo-collections/contracts">contracts</TOCLink>
+        <TOCLink to="/mongo-collections/contractlines">contractlines</TOCLink>
+        <TOCLink to="/mongo-collections/holidays">holidays</TOCLink>
+        <TOCLink to="/mongo-collections/lines">lines</TOCLink>
         <TOCLink to="/mongo-collections/ongoingsessions">
           ongoingsessions
         </TOCLink>
-        <TOCLink to="/mongo-collections/operators">
-          operators
-        </TOCLink>
+        <TOCLink to="/mongo-collections/operators">operators</TOCLink>
         <TOCLink to="/mongo-collections/organizationgroups">
-        organizationgroups
+          organizationgroups
         </TOCLink>
-        <TOCLink to="/mongo-collections/organizations">
-        organizations
-        </TOCLink>
-        <TOCLink to="/mongo-collections/Procedures">
-        procedures
-        </TOCLink>
-        <TOCLink to="/mongo-collections/Rooms">
-        rooms
-        </TOCLink>
+        <TOCLink to="/mongo-collections/organizations">organizations</TOCLink>
+        <TOCLink to="/mongo-collections/Procedures">procedures</TOCLink>
+        <TOCLink to="/mongo-collections/Rooms">rooms</TOCLink>
 
         <TOCTitle to="/projects">Projetos</TOCTitle>
         <TOCLink to="/projects/edocker">edocker</TOCLink>
