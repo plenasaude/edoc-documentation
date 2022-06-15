@@ -30,7 +30,10 @@ import LinesServer from "./pages/Projects/LinesServer";
 import LinesClient from "./pages/Projects/LinesClient";
 
 import Architecture from "./pages/Architecture";
+import Overview from "./pages/Architecture/Overview";
 import Migrations from "./pages/Architecture/Migrations";
+import ElasticBeanstalk from "./pages/Architecture/ElasticBeanstalk";
+import S3 from "./pages/Architecture/S3";
 
 import MongoCollections from "./pages/MongoCollections";
 import SessionRecordRegisters from "./pages/MongoCollections/SessionRecordRegisters";
@@ -96,6 +99,9 @@ function App() {
         <Route path="/architecture" element={<TOC />}>
           <Route index element={<Architecture />} />
           <Route path="migrations" element={<Migrations />} />
+          <Route path="overview" element={<Overview />} />
+          <Route path="elasticbeanstalk" element={<ElasticBeanstalk />} />
+          <Route path="s3" element={<S3 />} />
         </Route>
 
         <Route path="/mongo-collections" element={<TOC />}>
@@ -182,7 +188,10 @@ function TOC() {
         <TOCLink to="/complex-flows/billing">Faturamento</TOCLink>
         <TOCLink to="/complex-flows/queues">Filas de espera</TOCLink>
 
-        <TOCTitle to="/architecture">Arquitetura</TOCTitle>
+        <TOCTitle to="/architecture">Arquitetura da infra</TOCTitle>
+        <TOCLink to="/architecture/overview">Visão geral</TOCLink>
+        <TOCLink to="/architecture/elasticbeanstalk">Elastic Beanstalk</TOCLink>
+        <TOCLink to="/architecture/s3">S3</TOCLink>
         <TOCLink to="/architecture/migrations">Migração eDoc</TOCLink>
 
         <TOCTitle to="/mongo-collections">Base de dados</TOCTitle>
