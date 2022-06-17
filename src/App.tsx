@@ -50,6 +50,8 @@ import Rooms from "./pages/MongoCollections/Rooms";
 import Screens from "./pages/MongoCollections/Screens";
 import Smsreceiveds from "./pages/MongoCollections/SmsReceiveds";
 import Smssents from "./pages/MongoCollections/SmsSents";
+import Specialitiesstatics from "./pages/MongoCollections/Specialitiesstatics";
+import Tissdatas from "./pages/MongoCollections/Tissdatas";
 
 import ComplexFlows from "./pages/ComplexFlows";
 import Procedures from "./pages/ComplexFlows/Procedures";
@@ -124,6 +126,8 @@ function App() {
           />
           <Route path="smsreceiveds" element={<Smsreceiveds />} />
           <Route path="smssents" element={<Smssents />} />
+          <Route path="specialitiesstatics" element={<Specialitiesstatics />} />
+          <Route path="tissdatas" element={<Tissdatas />} />
         </Route>
 
         <Route path="/projects" element={<TOC />}>
@@ -217,6 +221,8 @@ function TOC() {
         </TOCLink>
         <TOCLink to="/mongo-collections/Smsreceiveds">smsreceiveds</TOCLink>
         <TOCLink to="/mongo-collections/Smssents">smssents</TOCLink>
+        <TOCLink to="/mongo-collections/Specialitiesstatics">specialitiesstatics</TOCLink>
+        <TOCLink to="/mongo-collections/Tissdatas">tissdatas</TOCLink>
 
         <TOCTitle to="/projects">Projetos</TOCTitle>
         <TOCLink to="/projects/edocker">edocker</TOCLink>
