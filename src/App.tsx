@@ -47,6 +47,7 @@ import Organizationgroups from "./pages/MongoCollections/Organizationgroups";
 import Organizations from "./pages/MongoCollections/Organizations";
 import ProceduresCollection from "./pages/MongoCollections/Procedures";
 import Rooms from "./pages/MongoCollections/Rooms";
+import Screens from "./pages/MongoCollections/Screens";
 
 import ComplexFlows from "./pages/ComplexFlows";
 import Procedures from "./pages/ComplexFlows/Procedures";
@@ -117,6 +118,7 @@ function App() {
           <Route path="organizations" element={<Organizations />} />
           <Route path="procedures" element={<ProceduresCollection />} />
           <Route path="rooms" element={<Rooms />} />
+          <Route path="screens" element={<Screens />} />
         </Route>
 
         <Route path="/projects" element={<TOC />}>
@@ -206,6 +208,7 @@ function TOC() {
         <TOCLink to="/mongo-collections/organizations">organizations</TOCLink>
         <TOCLink to="/mongo-collections/Procedures">procedures</TOCLink>
         <TOCLink to="/mongo-collections/Rooms">rooms</TOCLink>
+        <TOCLink to="/mongo-collections/Screens">screens</TOCLink>
 
         <TOCTitle to="/projects">Projetos</TOCTitle>
         <TOCLink to="/projects/edocker">edocker</TOCLink>

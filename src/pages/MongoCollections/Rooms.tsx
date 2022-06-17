@@ -80,6 +80,14 @@ export default function Rooms() {
                 </td>
                 <td className="tg-0pky" />
               </tr>
+              <tr>
+                <td className="tg-0pky">queues</td>
+                <td className="tg-0pky">
+                  Array com _id das das filas das quais essa localidade faz parte - ver collection{" "}
+                  <span style={{ fontWeight: "bold" }}>lines</span>
+                </td>
+                <td className="tg-0pky" />
+              </tr>
             </tbody>
           </table>
         </div>
