@@ -55,6 +55,7 @@ import Tissdatas from "./pages/MongoCollections/Tissdatas";
 import Tisslots from "./pages/MongoCollections/Tisslots";
 import Tisspasswords from "./pages/MongoCollections/Tisspasswords";
 import Tusses from "./pages/MongoCollections/Tusses";
+import Tussgroups from "./pages/MongoCollections/Tussgroups";
 
 import ComplexFlows from "./pages/ComplexFlows";
 import Procedures from "./pages/ComplexFlows/Procedures";
@@ -134,6 +135,7 @@ function App() {
           <Route path="tisslots" element={<Tisslots />} />
           <Route path="tisspasswords" element={<Tisspasswords />} />
           <Route path="tusses" element={<Tusses />} />
+          <Route path="tussgroups" element={<Tussgroups />} />
         </Route>
 
         <Route path="/projects" element={<TOC />}>
@@ -232,6 +234,7 @@ function TOC() {
         <TOCLink to="/mongo-collections/Tisslots">tisslots</TOCLink>
         <TOCLink to="/mongo-collections/Tisspasswords">tisspasswords</TOCLink>
         <TOCLink to="/mongo-collections/Tusses">tusses</TOCLink>
+        <TOCLink to="/mongo-collections/Tussgroups">tussgroups</TOCLink>
 
         <TOCTitle to="/projects">Projetos</TOCTitle>
         <TOCLink to="/projects/edocker">edocker</TOCLink>
