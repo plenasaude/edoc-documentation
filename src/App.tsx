@@ -52,7 +52,7 @@ import ProceduresCollection from "./pages/MongoCollections/Procedures";
 import Rooms from "./pages/MongoCollections/Rooms";
 
 import ComplexFlows from "./pages/ComplexFlows";
-import Procedures from "./pages/ComplexFlows/Procedures";
+import Instances from "./pages/ComplexFlows/Intances";
 import Slots from "./pages/ComplexFlows/Slots";
 import Billing from "./pages/ComplexFlows/Billing";
 import Queues from "./pages/ComplexFlows/Queues";
@@ -90,7 +90,7 @@ function App() {
 
         <Route path="/complex-flows" element={<TOC />}>
           <Route index element={<ComplexFlows />} />
-          <Route path="procedures" element={<Procedures />} />
+          <Route path="instances" element={<Instances />} />
           <Route path="slots" element={<Slots />} />
           <Route path="billing" element={<Billing />} />
           <Route path="queues" element={<Queues />} />
@@ -183,8 +183,8 @@ function TOC() {
         <TOCLink to="/getting-started/deploy">Deployando</TOCLink>
 
         <TOCTitle to="/complex-flows">Fluxos complexos</TOCTitle>
-        <TOCLink to="/complex-flows/procedures">Procedimentos</TOCLink>
-        <TOCLink to="/complex-flows/slots">Slots</TOCLink>
+        <TOCLink to="/complex-flows/instances">Instâncias</TOCLink>
+        <TOCLink to="/complex-flows/slots">Agendamentos</TOCLink>
         <TOCLink to="/complex-flows/billing">Faturamento</TOCLink>
         <TOCLink to="/complex-flows/queues">Filas de espera</TOCLink>
 
