@@ -49,6 +49,7 @@ import ProceduresCollection from "./pages/MongoCollections/Procedures";
 import Rooms from "./pages/MongoCollections/Rooms";
 import Screens from "./pages/MongoCollections/Screens";
 import Smsreceiveds from "./pages/MongoCollections/SmsReceiveds";
+import Smssents from "./pages/MongoCollections/SmsSents";
 
 import ComplexFlows from "./pages/ComplexFlows";
 import Procedures from "./pages/ComplexFlows/Procedures";
@@ -122,6 +123,7 @@ function App() {
             element={<SessionRecordRegisters />}
           />
           <Route path="smsreceiveds" element={<Smsreceiveds />} />
+          <Route path="smssents" element={<Smssents />} />
         </Route>
 
         <Route path="/projects" element={<TOC />}>
@@ -214,6 +216,7 @@ function TOC() {
           sessionrecordregisters
         </TOCLink>
         <TOCLink to="/mongo-collections/Smsreceiveds">smsreceiveds</TOCLink>
+        <TOCLink to="/mongo-collections/Smssents">smssents</TOCLink>
 
         <TOCTitle to="/projects">Projetos</TOCTitle>
         <TOCLink to="/projects/edocker">edocker</TOCLink>
