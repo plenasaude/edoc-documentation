@@ -48,6 +48,7 @@ import Organizations from "./pages/MongoCollections/Organizations";
 import ProceduresCollection from "./pages/MongoCollections/Procedures";
 import Rooms from "./pages/MongoCollections/Rooms";
 import Screens from "./pages/MongoCollections/Screens";
+import Smsreceiveds from "./pages/MongoCollections/SmsReceiveds";
 
 import ComplexFlows from "./pages/ComplexFlows";
 import Procedures from "./pages/ComplexFlows/Procedures";
@@ -101,10 +102,7 @@ function App() {
 
         <Route path="/mongo-collections" element={<TOC />}>
           <Route index element={<MongoCollections />} />
-          <Route
-            path="session-record-registers"
-            element={<SessionRecordRegisters />}
-          />
+          
           <Route path="appointments" element={<Appointments />} />
           <Route path="availabilities" element={<Availabilities />} />
           <Route path="cids" element={<Cids />} />
@@ -119,6 +117,11 @@ function App() {
           <Route path="procedures" element={<ProceduresCollection />} />
           <Route path="rooms" element={<Rooms />} />
           <Route path="screens" element={<Screens />} />
+          <Route
+            path="session-record-registers"
+            element={<SessionRecordRegisters />}
+          />
+          <Route path="smsreceiveds" element={<Smsreceiveds />} />
         </Route>
 
         <Route path="/projects" element={<TOC />}>
@@ -188,9 +191,7 @@ function TOC() {
         <TOCLink to="/architecture/migrations">Migração eDoc</TOCLink>
 
         <TOCTitle to="/mongo-collections">Base de dados</TOCTitle>
-        <TOCLink to="/mongo-collections/session-record-registers">
-          sessionrecordregisters
-        </TOCLink>
+        
         <TOCLink to="/mongo-collections/appointments">appointments</TOCLink>
         <TOCLink to="/mongo-collections/availabilities">availabilites</TOCLink>
         <TOCLink to="/mongo-collections/cids">cids</TOCLink>
@@ -209,6 +210,10 @@ function TOC() {
         <TOCLink to="/mongo-collections/Procedures">procedures</TOCLink>
         <TOCLink to="/mongo-collections/Rooms">rooms</TOCLink>
         <TOCLink to="/mongo-collections/Screens">screens</TOCLink>
+        <TOCLink to="/mongo-collections/session-record-registers">
+          sessionrecordregisters
+        </TOCLink>
+        <TOCLink to="/mongo-collections/Smsreceiveds">smsreceiveds</TOCLink>
 
         <TOCTitle to="/projects">Projetos</TOCTitle>
         <TOCLink to="/projects/edocker">edocker</TOCLink>
