@@ -50,6 +50,17 @@ import Organizationgroups from "./pages/MongoCollections/Organizationgroups";
 import Organizations from "./pages/MongoCollections/Organizations";
 import ProceduresCollection from "./pages/MongoCollections/Procedures";
 import Rooms from "./pages/MongoCollections/Rooms";
+import Screens from "./pages/MongoCollections/Screens";
+import Smsreceiveds from "./pages/MongoCollections/SmsReceiveds";
+import Smssents from "./pages/MongoCollections/SmsSents";
+import Specialitiesstatics from "./pages/MongoCollections/Specialitiesstatics";
+import Tissdatas from "./pages/MongoCollections/Tissdatas";
+import Tisslots from "./pages/MongoCollections/Tisslots";
+import Tisspasswords from "./pages/MongoCollections/Tisspasswords";
+import Tusses from "./pages/MongoCollections/Tusses";
+import Tussgroups from "./pages/MongoCollections/Tussgroups";
+import Users from "./pages/MongoCollections/Users";
+import Webschedullerconfigs from "./pages/MongoCollections/Webschedullerconfigs";
 
 import ComplexFlows from "./pages/ComplexFlows";
 import Instances from "./pages/ComplexFlows/Intances";
@@ -59,6 +70,9 @@ import Queues from "./pages/ComplexFlows/Queues";
 
 import ManualProcesses from "./pages/ManualProcesses";
 import HardcodedFlows from "./pages/ManualProcesses/HardcodedFlows";
+import RegisterOrganization from "./pages/ManualProcesses/RegisterOrganization";
+import UpdateOrganizationImage from "./pages/ManualProcesses/UpdateOrganizationImage";
+import RegisterSpeciality from "./pages/ManualProcesses/RegisterSpeciality";
 
 function App() {
   return (
@@ -106,10 +120,7 @@ function App() {
 
         <Route path="/mongo-collections" element={<TOC />}>
           <Route index element={<MongoCollections />} />
-          <Route
-            path="session-record-registers"
-            element={<SessionRecordRegisters />}
-          />
+          
           <Route path="appointments" element={<Appointments />} />
           <Route path="availabilities" element={<Availabilities />} />
           <Route path="cids" element={<Cids />} />
@@ -123,6 +134,21 @@ function App() {
           <Route path="organizations" element={<Organizations />} />
           <Route path="procedures" element={<ProceduresCollection />} />
           <Route path="rooms" element={<Rooms />} />
+          <Route path="screens" element={<Screens />} />
+          <Route
+            path="session-record-registers"
+            element={<SessionRecordRegisters />}
+          />
+          <Route path="smsreceiveds" element={<Smsreceiveds />} />
+          <Route path="smssents" element={<Smssents />} />
+          <Route path="specialitiesstatics" element={<Specialitiesstatics />} />
+          <Route path="tissdatas" element={<Tissdatas />} />
+          <Route path="tisslots" element={<Tisslots />} />
+          <Route path="tisspasswords" element={<Tisspasswords />} />
+          <Route path="tusses" element={<Tusses />} />
+          <Route path="tussgroups" element={<Tussgroups />} />
+          <Route path="users" element={<Users />} />
+          <Route path="webschedullerconfigs" element={<Webschedullerconfigs />} />
         </Route>
 
         <Route path="/projects" element={<TOC />}>
@@ -140,6 +166,9 @@ function App() {
         <Route path="/manual-processes" element={<TOC />}>
           <Route index element={<ManualProcesses />} />
           <Route path="hardcoded-flows" element={<HardcodedFlows />} />
+          <Route path="register-organization" element={<RegisterOrganization />} />
+          <Route path="update-organization-image" element={<UpdateOrganizationImage />} />
+          <Route path="register-speciality" element={<RegisterSpeciality />} />
         </Route>
 
         <Route path="/appendix" element={<TOC />}>
@@ -195,9 +224,7 @@ function TOC() {
         <TOCLink to="/architecture/migrations">Migração eDoc</TOCLink>
 
         <TOCTitle to="/mongo-collections">Base de dados</TOCTitle>
-        <TOCLink to="/mongo-collections/session-record-registers">
-          sessionrecordregisters
-        </TOCLink>
+        
         <TOCLink to="/mongo-collections/appointments">appointments</TOCLink>
         <TOCLink to="/mongo-collections/availabilities">availabilites</TOCLink>
         <TOCLink to="/mongo-collections/cids">cids</TOCLink>
@@ -215,6 +242,20 @@ function TOC() {
         <TOCLink to="/mongo-collections/organizations">organizations</TOCLink>
         <TOCLink to="/mongo-collections/Procedures">procedures</TOCLink>
         <TOCLink to="/mongo-collections/Rooms">rooms</TOCLink>
+        <TOCLink to="/mongo-collections/Screens">screens</TOCLink>
+        <TOCLink to="/mongo-collections/session-record-registers">
+          sessionrecordregisters
+        </TOCLink>
+        <TOCLink to="/mongo-collections/Smsreceiveds">smsreceiveds</TOCLink>
+        <TOCLink to="/mongo-collections/Smssents">smssents</TOCLink>
+        <TOCLink to="/mongo-collections/Specialitiesstatics">specialitiesstatics</TOCLink>
+        <TOCLink to="/mongo-collections/Tissdatas">tissdatas</TOCLink>
+        <TOCLink to="/mongo-collections/Tisslots">tisslots</TOCLink>
+        <TOCLink to="/mongo-collections/Tisspasswords">tisspasswords</TOCLink>
+        <TOCLink to="/mongo-collections/Tusses">tusses</TOCLink>
+        <TOCLink to="/mongo-collections/Tussgroups">tussgroups</TOCLink>
+        <TOCLink to="/mongo-collections/Users">users</TOCLink>
+        <TOCLink to="/mongo-collections/Webschedullerconfigs ">webschedullerconfigs</TOCLink>
 
         <TOCTitle to="/projects">Projetos</TOCTitle>
         <TOCLink to="/projects/edocker">edocker</TOCLink>
@@ -229,6 +270,9 @@ function TOC() {
         <TOCLink to="/manual-processes/hardcoded-flows">
           Fluxos hardcodados
         </TOCLink>
+        <TOCLink to="/manual-processes/register-organization">Cadastro de Unidades</TOCLink>
+        <TOCLink to="/manual-processes/update-organization-image">Atualizar imagem de unidade</TOCLink>
+        <TOCLink to="/manual-processes/register-speciality">Cadastro de Especialidades</TOCLink>
 
         <TOCTitle to="/appendix">Apêndices</TOCTitle>
         <TOCLink to="/appendix/tools">Ferramentas</TOCLink>
