@@ -9,11 +9,8 @@ export default function MongoCollections() {
       <h1>Descrição das coleções</h1>
 
       <p>
-        Nessa seção descreveremos o uso das coleções da base de dados e como
-        elas se relacionam
+        Nessa seção descreveremos o uso das coleções de dados da eDoc Saúde.
       </p>
-
-      <Diagram>{dbDiagram}</Diagram>
     </PageContent>
   );
 }

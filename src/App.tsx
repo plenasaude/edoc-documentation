@@ -69,7 +69,6 @@ import Billing from "./pages/ComplexFlows/Billing";
 import Queues from "./pages/ComplexFlows/Queues";
 
 import ManualProcesses from "./pages/ManualProcesses";
-import HardcodedFlows from "./pages/ManualProcesses/HardcodedFlows";
 import RegisterOrganization from "./pages/ManualProcesses/RegisterOrganization";
 import UpdateOrganizationImage from "./pages/ManualProcesses/UpdateOrganizationImage";
 import RegisterSpeciality from "./pages/ManualProcesses/RegisterSpeciality";
@@ -120,7 +119,7 @@ function App() {
 
         <Route path="/mongo-collections" element={<TOC />}>
           <Route index element={<MongoCollections />} />
-          
+
           <Route path="appointments" element={<Appointments />} />
           <Route path="availabilities" element={<Availabilities />} />
           <Route path="cids" element={<Cids />} />
@@ -148,7 +147,10 @@ function App() {
           <Route path="tusses" element={<Tusses />} />
           <Route path="tussgroups" element={<Tussgroups />} />
           <Route path="users" element={<Users />} />
-          <Route path="webschedullerconfigs" element={<Webschedullerconfigs />} />
+          <Route
+            path="webschedullerconfigs"
+            element={<Webschedullerconfigs />}
+          />
         </Route>
 
         <Route path="/projects" element={<TOC />}>
@@ -165,9 +167,14 @@ function App() {
 
         <Route path="/manual-processes" element={<TOC />}>
           <Route index element={<ManualProcesses />} />
-          <Route path="hardcoded-flows" element={<HardcodedFlows />} />
-          <Route path="register-organization" element={<RegisterOrganization />} />
-          <Route path="update-organization-image" element={<UpdateOrganizationImage />} />
+          <Route
+            path="register-organization"
+            element={<RegisterOrganization />}
+          />
+          <Route
+            path="update-organization-image"
+            element={<UpdateOrganizationImage />}
+          />
           <Route path="register-speciality" element={<RegisterSpeciality />} />
         </Route>
 
@@ -224,7 +231,7 @@ function TOC() {
         <TOCLink to="/architecture/migrations">Migração eDoc</TOCLink>
 
         <TOCTitle to="/mongo-collections">Base de dados</TOCTitle>
-        
+
         <TOCLink to="/mongo-collections/appointments">appointments</TOCLink>
         <TOCLink to="/mongo-collections/availabilities">availabilites</TOCLink>
         <TOCLink to="/mongo-collections/cids">cids</TOCLink>
@@ -248,14 +255,18 @@ function TOC() {
         </TOCLink>
         <TOCLink to="/mongo-collections/Smsreceiveds">smsreceiveds</TOCLink>
         <TOCLink to="/mongo-collections/Smssents">smssents</TOCLink>
-        <TOCLink to="/mongo-collections/Specialitiesstatics">specialitiesstatics</TOCLink>
+        <TOCLink to="/mongo-collections/Specialitiesstatics">
+          specialitiesstatics
+        </TOCLink>
         <TOCLink to="/mongo-collections/Tissdatas">tissdatas</TOCLink>
         <TOCLink to="/mongo-collections/Tisslots">tisslots</TOCLink>
         <TOCLink to="/mongo-collections/Tisspasswords">tisspasswords</TOCLink>
         <TOCLink to="/mongo-collections/Tusses">tusses</TOCLink>
         <TOCLink to="/mongo-collections/Tussgroups">tussgroups</TOCLink>
         <TOCLink to="/mongo-collections/Users">users</TOCLink>
-        <TOCLink to="/mongo-collections/Webschedullerconfigs ">webschedullerconfigs</TOCLink>
+        <TOCLink to="/mongo-collections/Webschedullerconfigs ">
+          webschedullerconfigs
+        </TOCLink>
 
         <TOCTitle to="/projects">Projetos</TOCTitle>
         <TOCLink to="/projects/edocker">edocker</TOCLink>
@@ -267,12 +278,15 @@ function TOC() {
         <TOCLink to="/projects/lines-client">Cliente de filas</TOCLink>
 
         <TOCTitle to="/manual-processes">Processos manuais</TOCTitle>
-        <TOCLink to="/manual-processes/hardcoded-flows">
-          Fluxos hardcodados
+        <TOCLink to="/manual-processes/register-organization">
+          Cadastro de Unidades
         </TOCLink>
-        <TOCLink to="/manual-processes/register-organization">Cadastro de Unidades</TOCLink>
-        <TOCLink to="/manual-processes/update-organization-image">Atualizar imagem de unidade</TOCLink>
-        <TOCLink to="/manual-processes/register-speciality">Cadastro de Especialidades</TOCLink>
+        <TOCLink to="/manual-processes/update-organization-image">
+          Atualizar imagem de unidade
+        </TOCLink>
+        <TOCLink to="/manual-processes/register-speciality">
+          Cadastro de Especialidades
+        </TOCLink>
 
         <TOCTitle to="/appendix">Apêndices</TOCTitle>
         <TOCLink to="/appendix/tools">Ferramentas</TOCLink>

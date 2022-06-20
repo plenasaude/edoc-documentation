@@ -47,32 +47,6 @@ export default function Product() {
         <li>Relatórios de atendimento</li>
         <li>Relatórios de repasse</li>
       </ol>
-
-      <h2>Solução eDoc</h2>
-
-      <h3>Plataforma de grupos</h3>
-      <TODO />
-      <Videos src="exemple.mp4" />
-
-      <h3>Plataforma de unidades</h3>
-      <TODO />
-      <Videos src="exemple.mp4" />
-
-      <h3>Agendamento online</h3>
-      <TODO />
-      <Videos src="exemple.mp4" />
-
-      <h3>Validação de certificados</h3>
-      <TODO />
-      <Videos src="exemple.mp4" />
-
-      <h3>Plataforma de filas</h3>
-      <TODO />
-      <Videos src="exemple.mp4" />
-
-      <h3>App</h3>
-      <TODO />
-      <Videos src="exemple.mp4" />
     </PageContent>
   );
 }
