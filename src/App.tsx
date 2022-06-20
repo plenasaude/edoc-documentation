@@ -72,6 +72,7 @@ import ManualProcesses from "./pages/ManualProcesses";
 import HardcodedFlows from "./pages/ManualProcesses/HardcodedFlows";
 import RegisterOrganization from "./pages/ManualProcesses/RegisterOrganization";
 import UpdateOrganizationImage from "./pages/ManualProcesses/UpdateOrganizationImage";
+import RegisterSpeciality from "./pages/ManualProcesses/RegisterSpeciality";
 
 function App() {
   return (
@@ -167,6 +168,7 @@ function App() {
           <Route path="hardcoded-flows" element={<HardcodedFlows />} />
           <Route path="register-organization" element={<RegisterOrganization />} />
           <Route path="update-organization-image" element={<UpdateOrganizationImage />} />
+          <Route path="register-speciality" element={<RegisterSpeciality />} />
         </Route>
 
         <Route path="/appendix" element={<TOC />}>
@@ -270,6 +272,7 @@ function TOC() {
         </TOCLink>
         <TOCLink to="/manual-processes/register-organization">Cadastro de Unidades</TOCLink>
         <TOCLink to="/manual-processes/update-organization-image">Atualizar imagem de unidade</TOCLink>
+        <TOCLink to="/manual-processes/register-speciality">Cadastro de Especialidades</TOCLink>
 
         <TOCTitle to="/appendix">Apêndices</TOCTitle>
         <TOCLink to="/appendix/tools">Ferramentas</TOCLink>

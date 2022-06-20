@@ -12,7 +12,7 @@ export default function UpdateOrganizationImage() {
       </p>
 
       <h3>Passo 1: alterar imagem da unidade no agendamento web</h3>
-      <a href="https://youtu.be/E_hcWRbhz3U">Como replicar um modelo</a>
+      <a href="https://youtu.be/E_hcWRbhz3U" target="_blank">Como replicar um modelo</a>
 
       <h3>Passo 2: limpar o cache</h3>
       <p>
@@ -22,7 +22,7 @@ export default function UpdateOrganizationImage() {
         de operação, em horários de baixa demanda.
       </p>
       <p>
-        Para limpar o chache, basta acessar <a href="http://api.consultasplena.com/admin/flushredis">http://api.consultasplena.com/admin/flushredis</a>. 
+        Para limpar o chache, basta acessar <a href="http://api.consultasplena.com/admin/flushredis" target="_blank">http://api.consultasplena.com/admin/flushredis</a>. 
         Ao acessar essa rota, o sistema apagará as informações de cache e as rearmazenará a
         partir do próximo login, permitindo que a imagem do agendamento web seja recarregada
         os usuários.

@@ -26,10 +26,10 @@ export default function RegisterOrganization() {
       <h2>Passo a passo para o cadastro de uma nova unidade</h2>
 
       <h3>Passo 1: replicar um modelo de unidade</h3>
-      <a href="https://youtu.be/HD-UlQ4smHc">Como replicar um modelo</a>
+      <a href="https://youtu.be/HD-UlQ4smHc" target="_blank">Como replicar um modelo</a>
       
       <h3>Passo 2: alterar imagem da unidade no agendamento web</h3>
-      <a href="https://youtu.be/E_hcWRbhz3U">Como replicar um modelo</a>
+      <a href="https://youtu.be/E_hcWRbhz3U" target="_blank">Como replicar um modelo</a>
 
       <h3>Passo 3: limpar o cache</h3>
       <p>
@@ -39,7 +39,7 @@ export default function RegisterOrganization() {
         de operação, em horários de baixa demanda.
       </p>
       <p>
-        Para limpar o chache, basta acessar <a href="http://api.consultasplena.com/admin/flushredis">http://api.consultasplena.com/admin/flushredis</a>. 
+        Para limpar o chache, basta acessar <a href="http://api.consultasplena.com/admin/flushredis" target="_blank">http://api.consultasplena.com/admin/flushredis</a>. 
         Ao acessar essa rota, o sistema apagará as informações de cache e as rearmazenará a
         partir do próximo login, permitindo que a imagem do agendamento web seja recarregada
         os usuários.
