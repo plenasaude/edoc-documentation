@@ -173,9 +173,19 @@ export default function RunningLocally() {
         <li>npm start</li>
       </ol>
 
-      <TODO>
-        Como criar uma tela e autorização para fazer o login na tela inicial
-      </TODO>
+      <p>
+        Depois de rodado o cliente de filas será necessário fazer o login como
+        um totem ou como uma TV. Se você quiser fazer um teste end-to-end usando
+        um totem e uma TV basta rodar o projeto do cliente de filas mais de uma
+        vez e fazer logins distintos.
+      </p>
+
+      <p>
+        Para fazer o login é necessário que você tenha criado um objeto na
+        coleção de screens. O campo tela será o valor do 'screen.code' do objeto
+        criado e a senha será o valor
+        J6amNBebpkhTQRYJkvXVhZbt68MFwHx9vXYBEw8ZFAXRCe8mVg3q6SJNe.
+      </p>
 
       <h1>Rodando validador de certificados</h1>
       <ol>
