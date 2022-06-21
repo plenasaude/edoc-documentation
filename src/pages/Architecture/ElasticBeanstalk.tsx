@@ -10,7 +10,7 @@ export default function ElasticBeanstalk() {
       <h3>schedullerAPI e secondary_apis</h3>
       <p>
         Application contendo servidores rodando o código do projeto da
-        <a href="https://github.com/plenasaude/edoc_api">API</a>
+        <a href="https://github.com/plenasaude/edoc_api" target="_blank">API</a>
       </p>
       <p>
         Essa aplicação tem diversos ambientes dentro dela para compartilhar a
@@ -41,7 +41,7 @@ export default function ElasticBeanstalk() {
       <h3>groups_spa</h3>
       <p>
         Servidor da plataforma de grupos, contém o código do projeto do
-        <a href="https://github.com/plenasaude/erp">ERP</a>
+        <a href="https://github.com/plenasaude/erp" target="_blank">ERP</a>
       </p>
       <p>
         Além de ter o código do front esse servidor serve como um proxy para os
@@ -51,7 +51,7 @@ export default function ElasticBeanstalk() {
       <h3>scheduller_spa</h3>
       <p>
         Servidor da plataforma de organizações, contém o código do projeto do
-        <a href="https://github.com/plenasaude/erp">ERP</a>
+        <a href="https://github.com/plenasaude/erp" target="_blank">ERP</a>
       </p>
       <p>
         Além de ter o código do front esse servidor serve como um proxy para os
@@ -62,14 +62,14 @@ export default function ElasticBeanstalk() {
       <p>
         Servidor com a lógica das filas de atendimento, usado pelos totens e TVs
         para chamar os pacientes. Contém o código do projeto
-        <a href="https://github.com/plenasaude/lines_server">lines_server</a>
+        <a href="https://github.com/plenasaude/lines_server" target="_blank">lines_server</a>
       </p>
 
       <h3>certificate_validator</h3>
       <p>
         Servidor da plataforma de validação de atestados. Contém o código do
         projeto
-        <a href="https://github.com/plenasaude/certificate_validator">
+        <a href="https://github.com/plenasaude/certificate_validator" target="_blank">
           certificate_validator
         </a>
       </p>
@@ -81,7 +81,7 @@ export default function ElasticBeanstalk() {
         É esse projeto por exemplo que é o responsável por marcar agendamentos
         em que o cliente não compareceu como cancelados todos os dias a noite.
         Contem o código do projeto
-        <a href="https://github.com/plenasaude/jobs">jobs</a>.
+        <a href="https://github.com/plenasaude/jobs" target="_blank">jobs</a>.
       </p>
 
       <h3>mongo-oplog</h3>
@@ -92,14 +92,14 @@ export default function ElasticBeanstalk() {
       </p>
       <p>
         Roda o código do projeto
-        <a href="https://github.com/plenasaude/mongo_oplog">mongo_oplog</a>.
+        <a href="https://github.com/plenasaude/mongo_oplog" target="_blank">mongo_oplog</a>.
       </p>
 
       <h3>slots</h3>
       <p>Serviço de gestão dos slots das agendas.</p>
       <p>
         Contém o código do projeto
-        <a href="https://github.com/plenasaude/slots">slots</a>.
+        <a href="https://github.com/plenasaude/slots" target="_blank">slots</a>.
       </p>
 
       <h3>tissRouter</h3>
@@ -109,21 +109,21 @@ export default function ElasticBeanstalk() {
       </p>
       <p>
         Contém o código do projeto
-        <a href="https://github.com/plenasaude/tiss_router">tiss_router</a>.
+        <a href="https://github.com/plenasaude/tiss_router" target="_blank">tiss_router</a>.
       </p>
 
       <h3>tissXML</h3>
       <p>Serviço que gera os arquivos XML no formato da TISS.</p>
       <p>
         Contém o código do projeto
-        <a href="https://github.com/plenasaude/tiss_xml">tiss_xml</a>.
+        <a href="https://github.com/plenasaude/tiss_xml" target="_blank">tiss_xml</a>.
       </p>
 
       <h3>web_scheduler</h3>
       <p>Plataforma de agendamento web.</p>
       <p>
         Contém o código do projeto
-        <a href="https://github.com/plenasaude/web_scheduler">web_scheduler</a>.
+        <a href="https://github.com/plenasaude/web_scheduler" target="_blank">web_scheduler</a>.
       </p>
     </PageContent>
   );

@@ -22,15 +22,15 @@ export default function Overview() {
         da AWS, uma vez que os outros 2 serviços tem usos bem básicos.
       </p>
       <h2>MongoAtlas</h2>
-      <a href="https://www.mongodb.com/">MongoAtlas</a> simplesmente hosteia a
+      <a href="https://account.mongodb.com/account/login" target="_blank">MongoAtlas</a> simplesmente hosteia a
       base de dados principal da eDoc. Todo serviço que usar a nossa base de
       dados se conectará nesta plataforma.
       <h2>Auth0</h2>
-      <a href="https://auth0.com/">Auth0</a> é o serviço de autenticação usado
+      <a href="https://auth0.com/" target="_blank">Auth0</a> é o serviço de autenticação usado
       pela eDoc. Todos os fronts que pedem autenticação enviarão este um pedido
       para o auth0 que retornará um JWT. Esse JWT por sua vez pode ser usado
       para ganhar acesso a outros serviços da eDoc, como a API por exemplo.
-      <h2>AWS</h2>A <a href="https://auth0.com/">AWS</a> é onde investiremos o
+      <h2>AWS</h2>A <a href="https://auth0.com/" target="_blank">AWS</a> é onde investiremos o
       maior tempo de toda essa seção, toda a lógica real da eDoc fica nesta
       plataforma. Nós usamos os seguintes serviços dentro da AWS para viabilizar
       a operação da eDoc:
