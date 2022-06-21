@@ -29,7 +29,7 @@ export default function RegisterOrganization() {
       <a href="https://youtu.be/HD-UlQ4smHc" target="_blank">Como replicar um modelo</a>
       
       <h3>Passo 2: alterar imagem da unidade no agendamento web</h3>
-      <a href="https://youtu.be/E_hcWRbhz3U" target="_blank">Como replicar um modelo</a>
+      <a href="https://youtu.be/E_hcWRbhz3U" target="_blank">Como alterar imagem de unidade</a>
 
       <h3>Passo 3: limpar o cache</h3>
       <p>
