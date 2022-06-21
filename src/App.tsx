@@ -72,6 +72,7 @@ import ManualProcesses from "./pages/ManualProcesses";
 import RegisterOrganization from "./pages/ManualProcesses/RegisterOrganization";
 import UpdateOrganizationImage from "./pages/ManualProcesses/UpdateOrganizationImage";
 import RegisterSpeciality from "./pages/ManualProcesses/RegisterSpeciality";
+import TussGroups from "./pages/ManualProcesses/TussGroups";
 
 function App() {
   return (
@@ -176,6 +177,7 @@ function App() {
             element={<UpdateOrganizationImage />}
           />
           <Route path="register-speciality" element={<RegisterSpeciality />} />
+          <Route path="tuss-groups" element={<TussGroups />} />
         </Route>
 
         <Route path="/appendix" element={<TOC />}>
@@ -287,6 +289,7 @@ function TOC() {
         <TOCLink to="/manual-processes/register-speciality">
           Cadastro de Especialidades
         </TOCLink>
+        <TOCLink to="/manual-processes/tuss-groups">Cadastro de Procedimentos</TOCLink>
 
         <TOCTitle to="/appendix">Apêndices</TOCTitle>
         <TOCLink to="/appendix/tools">Ferramentas</TOCLink>
