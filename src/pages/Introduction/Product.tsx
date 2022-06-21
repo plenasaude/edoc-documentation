@@ -47,6 +47,23 @@ export default function Product() {
         <li>Relatórios de atendimento</li>
         <li>Relatórios de repasse</li>
       </ol>
+
+      <h2>Manuais de uso</h2>
+      <p>
+        O sistema possui manuais de uso entregues no repositório do github.
+        Ambos são um <a href="https://www.gitbook.com/" target="_blank">gitbook</a>.
+        Para rodar o projeto da documentação, basta cloná-lo para uma pasta, entrar na
+        pasta e instalar todos os componentes com <code>npm install</code>.
+        Depois disso, basta rodar o gitbook com <code>gitbook serve</code>.
+        Ao abrir o servidor, abra o gitbook no seu browser em <code>http://localhost:4000</code>.
+      </p>
+      <p>
+        As documentações estão nos seguintes repositórios:
+        <ol>
+          <li> <a href="https://github.com/plenasaude/external_documentation" target="_blank">Documentação de Grupos</a> </li>
+          <li> <a href="https://github.com/plenasaude/external_documentation_orgs" target="_blank">Documentação de Unidades</a> </li>
+        </ol>
+      </p>
     </PageContent>
   );
 }
