@@ -73,6 +73,7 @@ import HardcodedFlows from "./pages/ManualProcesses/HardcodedFlows";
 import RegisterOrganization from "./pages/ManualProcesses/RegisterOrganization";
 import UpdateOrganizationImage from "./pages/ManualProcesses/UpdateOrganizationImage";
 import RegisterSpeciality from "./pages/ManualProcesses/RegisterSpeciality";
+import TussGroups from "./pages/ManualProcesses/TussGroups";
 
 function App() {
   return (
@@ -169,6 +170,7 @@ function App() {
           <Route path="register-organization" element={<RegisterOrganization />} />
           <Route path="update-organization-image" element={<UpdateOrganizationImage />} />
           <Route path="register-speciality" element={<RegisterSpeciality />} />
+          <Route path="tuss-groups" element={<TussGroups />} />
         </Route>
 
         <Route path="/appendix" element={<TOC />}>
@@ -273,6 +275,7 @@ function TOC() {
         <TOCLink to="/manual-processes/register-organization">Cadastro de Unidades</TOCLink>
         <TOCLink to="/manual-processes/update-organization-image">Atualizar imagem de unidade</TOCLink>
         <TOCLink to="/manual-processes/register-speciality">Cadastro de Especialidades</TOCLink>
+        <TOCLink to="/manual-processes/tuss-groups">Cadastro de Procedimentos</TOCLink>
 
         <TOCTitle to="/appendix">Apêndices</TOCTitle>
         <TOCLink to="/appendix/tools">Ferramentas</TOCLink>
