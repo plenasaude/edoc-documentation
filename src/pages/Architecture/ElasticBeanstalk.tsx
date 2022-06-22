@@ -118,6 +118,10 @@ export default function ElasticBeanstalk() {
         Contém o código do projeto
         <a href="https://github.com/plenasaude/tiss_xml" target="_blank">tiss_xml</a>.
       </p>
+      <p>
+        Para um tutorial de como atualizar a versão da tiss neste projeto, 
+        acesso <a href="https://youtu.be/F6Vw-6sLXco">este video</a>.
+      </p>
 
       <h3>web_scheduler</h3>
       <p>Plataforma de agendamento web.</p>
