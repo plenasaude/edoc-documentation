@@ -28,6 +28,7 @@ import CertificateValidator from "./pages/Projects/CertificateValidator";
 import Edocker from "./pages/Projects/Edocker";
 import LinesServer from "./pages/Projects/LinesServer";
 import LinesClient from "./pages/Projects/LinesClient";
+import TissXml from "./pages/Projects/tissXml";
 
 import Architecture from "./pages/Architecture";
 import Overview from "./pages/Architecture/Overview";
@@ -164,6 +165,7 @@ function App() {
           <Route path="edocker" element={<Edocker />} />
           <Route path="lines-server" element={<LinesServer />} />
           <Route path="lines-client" element={<LinesClient />} />
+          <Route path="tiss-xml" element={<TissXml />} />
         </Route>
 
         <Route path="/manual-processes" element={<TOC />}>
@@ -278,6 +280,7 @@ function TOC() {
         </TOCLink>
         <TOCLink to="/projects/lines-server">Servidor de filas</TOCLink>
         <TOCLink to="/projects/lines-client">Cliente de filas</TOCLink>
+        <TOCLink to="/projects/tiss-xml">TISS XML (Versão da TISS)</TOCLink>
 
         <TOCTitle to="/manual-processes">Processos manuais</TOCTitle>
         <TOCLink to="/manual-processes/register-organization">
