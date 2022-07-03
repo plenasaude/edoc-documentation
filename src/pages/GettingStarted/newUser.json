@@ -1,0 +1,71 @@
+{
+  "createdAt": {
+    "$numberLong": "1488911486807"
+  },
+  "name": "rafael souza da cunha",
+  "cpf": "01039481124",
+  "email": "rafael@email.com",
+  "authId": [
+    "auth0|589859cf6e602023d8ee1709"
+  ],
+  "__t": "Staff",
+  "labels": [
+    "Patient"
+  ],
+  "familyHistory": [],
+  "healthProfile": {
+    "allergies": [],
+    "surgeries": [],
+    "medicines": [],
+    "cronicalDeseases": []
+  },
+  "insurance": [],
+  "filiation": [],
+  "phones": [
+    {
+      "default": true,
+      "_id": {
+        "$oid": "608c37f6484ae80fa3a6b714"
+      },
+      "number": 11971189009,
+      "label": "mobile"
+    }
+  ],
+  "validation": {
+    "tries": 0,
+    "expiration": 0,
+    "pin": ""
+  },
+  "isValid": true,
+  "shared": false,
+  "isLocal": false,
+  "roles": [
+    "staff",
+    "root"
+  ],
+  "updatedAt": [],
+  "isActive": true,
+  "__v": 0,
+  "nameLatinise": "rafael souza da cunha",
+  "gender": "male",
+  "birthdate": 629560800000,
+  "isDependent": false,
+  "fakeCpf": false,
+  "enrolledFaces": [],
+  "pushNotification": [],
+  "emailVerified": true,
+  "documents": [],
+  "canSendEmail": false,
+  "lastUpdatedAt": 1619802102839,
+  "mobileFirstLoginDate": 1558385450922,
+  "govUserData": {
+    "name": "RAFAEL SOUZA DA CUNHA",
+    "gender": "male",
+    "birthdate": 629431200000,
+    "motherName": "MAE DO RAFA",
+    "cpf": "01039481124",
+    "status": "confirmed"
+  },
+  "dependencyInfo": {},
+  "demographics": {}
+}

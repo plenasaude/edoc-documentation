@@ -11,7 +11,7 @@ import mongoBackup from "../../files/dbRestorePlaceholder?url";
 export default function RunningLocally() {
   return (
     <PageContent>
-      <h1>Rodando no local</h1>
+      <h1>Rodando com edocker</h1>
 
       <p>
         Rodar a infraestrutura no local é o primeiro passo para alterar o

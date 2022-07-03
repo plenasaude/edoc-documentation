@@ -1,1 +1,1 @@
-MONGO_URL=mongodb://localhost:27017/prod_dump4
+MONGO_URL=mongodb://localhost:27017/edoc
