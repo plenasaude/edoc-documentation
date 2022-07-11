@@ -17,8 +17,8 @@ import DocumentationExemples from "./pages/Appendix/DocumentationExemples";
 import GettingStarted from "./pages/GettingStarted";
 import Requirements from "./pages/GettingStarted/Requirements";
 import EnvironmentVariables from "./pages/GettingStarted/EnvironmentVariables";
-import RunningLocally from "./pages/GettingStarted/RunningLocally";
 import RunningMixed from "./pages/GettingStarted/RunningMixed";
+import RunningFromScratch from "./pages/GettingStarted/RunningFromScratch";
 import Deploy from "./pages/GettingStarted/Deploy";
 import ProjectsDependencies from "./pages/GettingStarted/ProjectsDependencies";
 
@@ -99,8 +99,8 @@ function App() {
             path="projects-dependencies"
             element={<ProjectsDependencies />}
           />
-          <Route path="running-locally" element={<RunningLocally />} />
           <Route path="running-mixed" element={<RunningMixed />} />
+          <Route path="running-from-scratch" element={<RunningFromScratch />} />
           <Route path="deploy" element={<Deploy />} />
         </Route>
 
@@ -216,7 +216,7 @@ function TOC() {
         <TOCLink to="/getting-started/projects-dependencies">
           Dependência entre projetos
         </TOCLink>
-        <TOCLink to="/getting-started/running-locally">
+        <TOCLink to="/getting-started/running-from-scratch">
           Rodando no local
         </TOCLink>
         <TOCLink to="/getting-started/running-mixed">
@@ -295,7 +295,9 @@ function TOC() {
         <TOCLink to="/manual-processes/register-speciality">
           Cadastro de Especialidades
         </TOCLink>
-        <TOCLink to="/manual-processes/tuss-groups">Cadastro de Procedimentos</TOCLink>
+        <TOCLink to="/manual-processes/tuss-groups">
+          Cadastro de Procedimentos
+        </TOCLink>
 
         <TOCTitle to="/appendix">Apêndices</TOCTitle>
         <TOCLink to="/appendix/tools">Ferramentas</TOCLink>

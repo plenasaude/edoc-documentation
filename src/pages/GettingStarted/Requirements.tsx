@@ -1,5 +1,4 @@
 import { PageContent } from "../../components/PageContent";
-import { TODO } from "../../components/TODO";
 
 export default function Requirements() {
   return (
@@ -89,7 +88,46 @@ export default function Requirements() {
       </p>
 
       <h2>Usuário no auth0</h2>
-      <TODO></TODO>
+      <p>
+        O login da eDoc sempre usa o auth0 como provedor, mesmo para o
+        desenvolvimento local. Ou seja, é possível desenvolver localmente, mas
+        não offline.
+      </p>
+
+      <p>
+        O auth0 funciona com o conceito de 'tenants', que são diferentes perfies
+        que você pode criar dentro de uma conta. Atualmente a eDoc usa 3
+        tenants:
+      </p>
+      <ol>
+        <li>
+          edocauth: o ambiente de produção do auth0. Aqui estão os dados de
+          login dos usuário reais da plataforma. Sempre evite modificar dados
+          manualmente nesta base de dados, uma vez que isso pode afetar o
+          comportamento da plataforma para este usuário.
+        </li>
+        <li>edocauth-approval: ambiente para testes e QA</li>
+        <li>
+          edocauth-dev: ambiente para uso de desenvolvimento, em geral quando
+          rodamos o sistema no local vamos querer logar neste tenant. Aqui você
+          pode ter mais liberdade de mexer manualmente, dado que é um ambiente
+          para desenvolvimento. Como temos este único ambiente para todos os
+          desenvolvedores, só tome o cuidado para não quebrar o testes dos
+          outros.
+        </li>
+      </ol>
+
+      <p>
+        Um usuário da base de dados eDoc é ligado ao auth0 a partir da chave
+        'authId', que é um array, permitindo um único user ter múltiplos logins
+        distintos.
+      </p>
+
+      <p>
+        Ao fazer um login no auth0 nós teremos um JWT, a API vai descompactar os
+        dados deste JWT e tentar achar um usuário na base que contenha o ID do
+        JWT no campo authId da coleção de users no mongo.
+      </p>
     </PageContent>
   );
 }

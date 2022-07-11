@@ -16,7 +16,6 @@ export function DownloadFile({
   src: string;
   children?: string;
 }) {
-  console.log(src);
   return (
     <button
       onClick={() => {
