@@ -3,5 +3,6 @@
     "deployados",
     "edoc",
     "edocker"
-  ]
+  ],
+  "editor.rulers": [80 ,120]
 }

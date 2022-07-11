@@ -68,6 +68,7 @@ import Instances from "./pages/ComplexFlows/Intances";
 import Slots from "./pages/ComplexFlows/Slots";
 import Billing from "./pages/ComplexFlows/Billing";
 import Queues from "./pages/ComplexFlows/Queues";
+import BillingContracts from "./pages/ComplexFlows/Contracts";
 
 import ManualProcesses from "./pages/ManualProcesses";
 import RegisterOrganization from "./pages/ManualProcesses/RegisterOrganization";
@@ -109,6 +110,7 @@ function App() {
           <Route path="slots" element={<Slots />} />
           <Route path="billing" element={<Billing />} />
           <Route path="queues" element={<Queues />} />
+          <Route path="billing-contracts" element={<BillingContracts />} />
         </Route>
 
         <Route path="/architecture" element={<TOC />}>
@@ -225,8 +227,9 @@ function TOC() {
         <TOCTitle to="/complex-flows">Fluxos complexos</TOCTitle>
         <TOCLink to="/complex-flows/instances">Instâncias</TOCLink>
         <TOCLink to="/complex-flows/slots">Agendamentos</TOCLink>
-        <TOCLink to="/complex-flows/billing">Faturamento</TOCLink>
         <TOCLink to="/complex-flows/queues">Filas de espera</TOCLink>
+        <TOCLink to="/complex-flows/billing">Faturamento</TOCLink>
+        <TOCLink to="/complex-flows/billing-contracts">Contratos</TOCLink>
 
         <TOCTitle to="/architecture">Arquitetura da infra</TOCTitle>
         <TOCLink to="/architecture/overview">Visão geral</TOCLink>
